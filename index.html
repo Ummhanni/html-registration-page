@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="reg.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   <main>
+    <div class="container">
+        <div class="one">
+            <h1>Learn to code by watching others</h1>
+            <p class="pone">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+        </div>
+
+        <div class="two">
+            <p class="ptwo">Try it free 7 days <small>then $20/mo. thereafter</small></p>
+            <form action="">
+             <div class="input-error" data-error="First Name cannot be empty ">
+                <input type="text" placeholder="Full Name" class="input"  required>
+             </div>
+                
+            <div class="input-error" data-error="Last Name cannot be empty ">
+                <input type="text" placeholder="Last Name" class="input" required>
+            </div>
+
+            <div class="input-error" data-error="Looks like this is not an email">
+                <input type="email" placeholder="Email Address"  class="input" required>
+            </div>
+            
+            <div class="input-error" data-error="Password cannot be empty ">
+                <input type="password" placeholder="Password"  class="input" required>
+            </div>
+               
+                <button class="button" action="submit"> CLAIM YOUR FREE TRIAL</button>
+               <p class="pthree">By clicking the button, you are agreeing to our <bold>Terms and Services</bold></p>
+            </form>
+            
+        </div>
+    </div>
+   </main> 
+  
+   <script>
+        document.querySelectorAll('.input-error[data-error] .input') .forEach(inpEl =>{
+            inpEl.addEventListener('input', () => inpEl.parentElement.removeAttribute('data-error'));
+        })
+   </script>
+</body>
+</html>

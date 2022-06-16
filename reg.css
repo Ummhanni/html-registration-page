@@ -1,0 +1,140 @@
+body{
+    background-color:  hsl(0, 100%, 74%) ;
+    background-image: url("./bg-intro-desktop.png");
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    
+}
+.container{
+    margin: 0px;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content:center;
+}
+.one{
+    color: white;
+}
+.pone{
+    color: white;
+    font-size: 16px ;
+    line-height: 23px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+small{
+    font-weight: 400;
+}
+.ptwo{
+    color: white;
+    font-size: 16px ;
+    font-weight: 600;
+    background-color:  hsl(248, 32%, 49%) ;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 7px  rgba(219, 100, 103, 1);
+    letter-spacing: 0.5px;
+}
+.pthree{
+    color:hsl(246, 25%, 77%) ;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    padding-top: 0px;
+    letter-spacing: 0.5px;
+}
+bold{
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+h1{
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    letter-spacing: 0.5px;
+}
+form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 7px  rgba(219, 100, 103, 1);
+}
+input{
+    padding: 15px;
+    margin: 15px;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    width: 90%;
+  
+}
+
+.button{
+    background-color: hsl(154, 59%, 51%);
+    border-color: transparent;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0px 4px  rgb(125, 199, 166);
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.input-error[data-error]::after{
+    content: attr(data-error);
+    font-size: 13px;
+    color: rgba(219, 100, 103, 1);    
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 0.2px;
+    padding-bottom: 3px;
+    display: block;
+    float: right;
+    margin-right: 10px;
+}
+
+@media screen and (min-width:610px) {
+    .container{
+        flex-direction:row;
+    }
+    h1{
+        font-size: 60px;
+
+    }
+    .one{
+        color: white;
+        width: 35vw;
+        padding: 40px;
+    }
+    .two{
+        width: 35vw;
+        padding: 40px;
+    }
+}
+@media screen and (max-width:600px) {
+    .container{
+        flex-direction:column; 
+    }
+    h1{
+        padding-top: 40px;
+       
+    }
+    .one{
+        color: white;
+        width: 80vw;
+        padding: 20px;
+        text-align: center;
+    }
+    .two{
+        width: 80vw;
+        padding: 5px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+}
