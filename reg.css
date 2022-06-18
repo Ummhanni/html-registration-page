@@ -96,6 +96,7 @@ input{
     display: block;
     float: right;
     margin-right: 10px;
+    border 2px solid rgba(219, 100, 103, 1);
 }
 
 @media screen and (min-width:610px) {
