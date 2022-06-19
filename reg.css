@@ -1,6 +1,6 @@
 body{
     background-color:  hsl(0, 100%, 74%) ;
-    background-image: url("./bg-intro-desktop.png");
+    
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     
@@ -100,6 +100,9 @@ input{
 }
 
 @media screen and (min-width:610px) {
+    body{
+        background-image: url("./bg-intro-desktop.png");
+    }
     .container{
         flex-direction:row;
     }
@@ -118,6 +121,9 @@ input{
     }
 }
 @media screen and (max-width:600px) {
+     body{
+        background-image: url("./bg-intro-mobile.png");
+    }
     .container{
         flex-direction:column; 
     }
